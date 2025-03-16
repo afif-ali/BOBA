@@ -37,7 +37,7 @@ h1 {
 }
 
 sect {
-    display: inline-flex;
+    display: flex;
     align-items: center;
 
     img {
@@ -52,6 +52,20 @@ sect {
         h2 {
             font-family: bubble;
         }
+        
+    }
+}
+sect:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+@media all and (max-width:768px) {
+    sect {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    sect:nth-child(odd) {
+        text-align: center;
+        flex-direction: column-reverse;
     }
 }
 
