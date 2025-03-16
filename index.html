@@ -35,6 +35,49 @@
                 </ul>
             </div>
         </sect>
+        <sect>
+            <div>
+                <h2>Tapioca Pearls & Toppings</h2>
+                <p>The chewy boba pearls are made from tapioca starch, giving them their signature texture. Other toppings include popping boba, jelly, aloe vera, and pudding.</p>
+            </div>
+            <img src="pandacup.png" alt="">
+        </sect>
+        <sect class="fact">
+            <h2 class="factheader">FUN FACTS!</h2>
+            <p class="facttext">? ? ?</p>
+            <button class="factbtn" onclick="randomFact()">GENERATE FUN FACT!</button>
+        </sect>
     </div>
 </body>
 </html>
+
+<script>
+    function randomFact()
+    {
+        const bobaFacts = [
+            "🧋 Boba originated in Taiwan in the 1980s.",
+            "🥤 The word 'boba' can refer to both the drink and the tapioca pearls.",
+            "🌱 Tapioca pearls are made from cassava root starch.",
+            "🍯 Classic boba pearls are black due to caramelized brown sugar.",
+            "🍵 Some boba shops use honey or matcha to flavor their pearls.",
+            "💥 Popping boba is filled with fruit juice and bursts in your mouth.",
+            "🏆 The largest boba cup ever made was over 3,000 liters!",
+            "✨ Some boba shops offer gold flakes as a topping.",
+            "🥄 Boba straws are extra-wide to fit the pearls perfectly.",
+            "🌈 There’s a type of boba called 'crystal boba' made from agar jelly.",
+            "🍹 Boba tea was originally shaken in cocktail shakers to create bubbles.",
+            "🧀 Cheese foam boba is topped with a creamy, salty-sweet cheese layer.",
+            "🔥 Brown sugar boba is caramelized for a rich, smoky taste.",
+            "🌸 Some boba pearls are rainbow-colored for a fun aesthetic.",
+            "🥛 Milk tea boba is the most popular variation worldwide.",
+            "🍍 Fruit teas with boba are a caffeine-free alternative.",
+            "🔄 Some boba cups come with a sealed plastic film instead of a lid.",
+            "🏠 There are DIY boba kits for making bubble tea at home.",
+            "❄️ Boba can be served hot or cold, depending on preference.",
+            "⏳ The tapioca pearls become hard if left in the drink too long!"
+        ];
+        const random = Math.floor(Math.random() * bobaFacts.length);
+
+        document.getElementsByClassName("facttext")[0].innerText=bobaFacts[random];
+    }
+</script>

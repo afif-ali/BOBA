@@ -54,3 +54,40 @@ sect {
         }
     }
 }
+
+.fact {
+    border: #583b39 solid 5px;
+    border-radius: 1rem;
+    margin: 1rem;
+    display: block;
+    text-align: center;
+    h2 {
+        font-family: bubble;
+        color: #583b39;
+        margin: 1rem;
+    }
+    button {
+        background-color: #583b39;
+        border: #583b39 solid 5px;
+        font-family: bubble;
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 1rem;
+        margin: 1rem;
+        color: #f0dfc5;
+        cursor: pointer;
+    }
+    @media (hover: hover), (-ms-high-contrast:none) {
+    button:hover {
+        color: #583b39;
+        background-color: #f0dfc5;
+        transition: .2s;
+    }
+    }
+    p {
+        padding: 1rem;
+        font-family: "fuzzy";
+        color: #583b39;
+        font-weight: bold;
+    }
+}
